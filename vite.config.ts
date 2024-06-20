@@ -113,7 +113,7 @@ export default defineConfig({
       external: (id: string) => {
         console.log(id);
         // return id === 'tinyld' || /tinyld\/dist\/tinyld\.normal\.node\.mjs$/.test(id);
-        const filePathRegex = /C:\/Users\/Ekene\/Documents\/tweb-master\/tweb-master\/src\/lib\/tinyld\/detect\.ts/;
+        const filePathRegex = /C:\/tcopx\/src\/lib\/tinyld\/detect\.ts/;
         return filePathRegex.test(id);
       },
       output: {
