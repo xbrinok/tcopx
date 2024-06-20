@@ -111,7 +111,7 @@ export default defineConfig({
     minify: NO_MINIFY ? false : undefined,
     rollupOptions: {
       external: (id: string) => {
-        console.log(id);
+        // console.log(id);
         // return id === 'tinyld' || /tinyld\/dist\/tinyld\.normal\.node\.mjs$/.test(id);
         const filePathRegex = /C:\/tcopx\/src\/lib\/tinyld\/detect\.ts/;
         return filePathRegex.test(id);

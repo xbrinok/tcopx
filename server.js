@@ -14,8 +14,8 @@ const thirdTour = process.argv[2] == 3;
 const forcePort = process.argv[3];
 const useHttp = process.argv[4] !== "https";
 
-const publicFolderName = thirdTour ? "public3" : "dist";
-const port = forcePort ? +forcePort : thirdTour ? 8443 : 8080;
+const publicFolderName = thirdTour ? "public3" : "public";
+const port = forcePort ? +forcePort : thirdTour ? 8443 : 4020;
 
 app.use(cors());
 app.set("etag", false);
