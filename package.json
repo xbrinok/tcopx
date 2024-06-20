@@ -10,7 +10,7 @@
     "build": "pnpm run generate-changelog && vite build",
     "app-start": "vite && node server.js",
     "test": "vitest",
-    "deploy": "node server.js",
+    "deploy": "concurrently \"vite\" \"node ./server.js\"",
     "whybundled": "pnpm run profile && whybundled stats.json",
     "generate-mtproto-types": "node ./src/scripts/generate_mtproto_types.js src/",
     "generate-changelog": "node ./src/scripts/generate_changelog.js",
